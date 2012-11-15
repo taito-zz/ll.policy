@@ -22,8 +22,11 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'abita.development',
         'hexagonit.testing',
+        'll.theme',
         'setuptools',
+        'z3c.autoinclude',
         'zope.i18nmessageid'],
     entry_points="""
     # -*- Entry points: -*-
