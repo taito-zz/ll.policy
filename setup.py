@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='ll.policy',
-    version='0.0',
+    version='0.1',
     description="Turns Plone Site into LL site.",
     long_description=open("README.rst").read(),
     classifiers=[
