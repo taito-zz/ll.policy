@@ -9,7 +9,7 @@
   <i18n:registerTranslations directory="locales" />
 
   <genericsetup:registerProfile
-    description="Installs the ll.policy package"
+    description="Installs ll.policy package"
     directory="profiles/default"
     name="default"
     provides="Products.GenericSetup.interfaces.EXTENSION"
