@@ -26,6 +26,7 @@ setup(
         'hexagonit.testing',
         'll.theme',
         'setuptools',
+        'sll.locales',
         'z3c.autoinclude',
         'zope.i18nmessageid'],
     entry_points="""
