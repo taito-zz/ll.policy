@@ -1,0 +1,16 @@
+<configure
+  i18n_domain="ll.policy"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns="http://namespaces.zope.org/zope">
+
+  <genericsetup:upgradeStep
+    description=""
+    destination="1"
+    handler="ll.policy.upgrades.upgrade_0_to_1"
+    profile="ll.policy:default"
+    sortkey="1"
+    source="0"
+    title="Install collective.folderlogo"
+    />
+
+</configure>
