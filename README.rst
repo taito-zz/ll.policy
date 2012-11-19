@@ -7,6 +7,11 @@ ll.policy turns Plone site into LL site.
 Changelog
 ---------
 
+0.1.2 (2012-11-19)
+==================
+
+- Added dependency to collective.folderlogo. [taito]
+
 0.1.1 (2012-11-15)
 ==================
 
