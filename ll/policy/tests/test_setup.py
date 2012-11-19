@@ -21,6 +21,10 @@ class TestCase(IntegrationTestCase):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.failUnless(installer.isProductInstalled('abita.development'))
 
+    def test_metadata__dependency__collective_folderlogo(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('collective.folderlogo'))
+
     def test_metadata__dependency__ll_theme(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.failUnless(installer.isProductInstalled('ll.theme'))

@@ -23,6 +23,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'abita.development',
+        'collective.folderlogo',
         'hexagonit.testing',
         'll.theme',
         'setuptools',
