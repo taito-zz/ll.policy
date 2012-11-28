@@ -25,6 +25,10 @@ class TestCase(IntegrationTestCase):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.failUnless(installer.isProductInstalled('collective.folderlogo'))
 
+    def test_metadata__dependency__hexagonit_socialbutton(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('hexagonit.socialbutton'))
+
     def test_metadata__dependency__ll_theme(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.failUnless(installer.isProductInstalled('ll.theme'))

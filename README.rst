@@ -7,6 +7,12 @@ ll.policy turns Plone site into LL site.
 Changelog
 ---------
 
+0.3 (2012-11-xx)
+================
+
+- Added dependency to hexagonit.socialbutton. [taito]
+
+
 0.2 (2012-11-19)
 ================
 

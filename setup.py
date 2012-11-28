@@ -15,21 +15,21 @@ setup(
     keywords='',
     author='Taito Horiuchi',
     author_email='taito.horiuchi@abita.fi',
-    url='http://www.ll.fi',
+    url='https://github.com/taito/ll.policy',
     license='Non-free',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['ll'],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'Products.CMFPlone>=4.2',
         'abita.development',
         'collective.folderlogo',
+        'hexagonit.socialbutton',
         'hexagonit.testing',
         'll.theme',
         'setuptools',
-        'sll.locales',
-        'z3c.autoinclude',
-        'zope.i18nmessageid'],
+        'sll.locales'],
     entry_points="""
     # -*- Entry points: -*-
 
