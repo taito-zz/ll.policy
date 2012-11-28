@@ -11,7 +11,7 @@ Changelog
 ================
 
 - Added dependency to hexagonit.socialbutton. [taito]
-
+- Added testing integration to Travis CI. [taito]
 
 0.2 (2012-11-19)
 ================
