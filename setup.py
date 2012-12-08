@@ -23,14 +23,17 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'Products.CMFPlone>=4.2',
+        'Products.PFGExtendedMailAdapter',
+        'Products.PFGSelectionStringField',
         'abita.development',
         'collective.folderlogo',
-        'hexagonit.socialbutton',
+        'collective.microsite',
+        'collective.pfg.payment',
+        'collective.pfg.showrequest',
         'hexagonit.testing',
         'll.theme',
         'setuptools',
-        'sll.locales'],
+        'sll.basepolicy'],
     entry_points="""
     # -*- Entry points: -*-
 

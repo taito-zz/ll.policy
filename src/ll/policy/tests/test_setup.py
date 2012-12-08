@@ -8,14 +8,17 @@ class TestCase(IntegrationTestCase):
     def setUp(self):
         self.portal = self.layer['portal']
 
-    def test_is_ll_policy_installed(self):
+    def test_package_installed(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.failUnless(installer.isProductInstalled('ll.policy'))
 
-    def test_metadata__version(self):
-        setup = getToolByName(self.portal, 'portal_setup')
-        self.assertEqual(
-            setup.getVersionForProfile('profile-ll.policy:default'), u'1')
+    def test_metadata__dependency__Products_PFGExtendedMailAdapter(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('PFGExtendedMailAdapter'))
+
+    def test_metadata__dependency__Products_PFGSelectionStringField(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('PFGSelectionStringField'))
 
     def test_metadata__dependency__abita_development(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
@@ -25,13 +28,29 @@ class TestCase(IntegrationTestCase):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.failUnless(installer.isProductInstalled('collective.folderlogo'))
 
-    def test_metadata__dependency__hexagonit_socialbutton(self):
+    def test_metadata__dependency__collective_microsite(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
-        self.failUnless(installer.isProductInstalled('hexagonit.socialbutton'))
+        self.failUnless(installer.isProductInstalled('collective.microsite'))
+
+    def test_metadata__dependency__collective_pfg_payment(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('collective.pfg.payment'))
+
+    def test_metadata__dependency__collective_pfg_showrequest(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('collective.pfg.showrequest'))
+
+    def test_metadata__dependency__sll_basepolicy(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('sll.basepolicy'))
 
     def test_metadata__dependency__ll_theme(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.failUnless(installer.isProductInstalled('ll.theme'))
+
+    def test_metadata__version(self):
+        setup = getToolByName(self.portal, 'portal_setup')
+        self.assertEqual(setup.getVersionForProfile('profile-ll.policy:default'), u'1')
 
     def test_uninstall__package(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
