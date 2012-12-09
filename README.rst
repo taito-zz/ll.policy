@@ -7,7 +7,7 @@ ll.policy turns Plone site into LL site.
 Changelog
 ---------
 
-0.4 (2012-12-08)
+0.4 (2012-12-09)
 ================
 
 - Updated dependencies. [taito]
