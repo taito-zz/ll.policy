@@ -33,7 +33,8 @@ setup(
         'hexagonit.testing',
         'll.theme',
         'setuptools',
-        'sll.basepolicy'],
+        'sll.basepolicy',
+        'sll.locales'],
     entry_points="""
     # -*- Entry points: -*-
 
