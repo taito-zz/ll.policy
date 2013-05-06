@@ -9,6 +9,7 @@
     <dependency>profile-collective.microsite:default</dependency>
     <dependency>profile-collective.pfg.payment:default</dependency>
     <dependency>profile-collective.pfg.showrequest:default</dependency>
+    <dependency>profile-collective.prettyphoto:default</dependency>
     <dependency>profile-sll.basepolicy:default</dependency>
     <dependency>profile-ll.theme:default</dependency>
   </dependencies>

@@ -10,6 +10,7 @@ setup(
     classifiers=[
         "Framework :: Plone",
         "Framework :: Plone :: 4.2",
+        "Framework :: Plone :: 4.3",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7"],
     keywords='',
@@ -30,11 +31,12 @@ setup(
         'collective.microsite',
         'collective.pfg.payment',
         'collective.pfg.showrequest',
-        'hexagonit.testing',
+        'collective.prettyphoto',
         'll.theme',
         'setuptools',
         'sll.basepolicy',
         'sll.locales'],
+    extras_require={'test': ['hexagonit.testing']},
     entry_points="""
     # -*- Entry points: -*-
 

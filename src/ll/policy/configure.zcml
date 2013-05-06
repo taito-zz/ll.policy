@@ -1,6 +1,5 @@
 <configure
   i18n_domain="ll.policy"
-  xmlns:five="http://namespaces.zope.org/five"
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
   xmlns="http://namespaces.zope.org/zope">
 
@@ -11,6 +10,7 @@
   <include package="collective.microsite"/>
   <include package="collective.pfg.payment"/>
   <include package="collective.pfg.showrequest"/>
+  <include package="collective.prettyphoto"/>
   <include package="sll.basepolicy"/>
   <include package="ll.theme"/>
 

@@ -7,6 +7,13 @@ ll.policy turns Plone site into LL site.
 Changelog
 ---------
 
+0.5 (2013-05-06)
+================
+
+- Moved test packages to extras_require. [taito]
+- Added dependency to collective.prettyphoto. [taito]
+- Tested with Plone-4.3. [taito]
+
 0.4 (2012-12-09)
 ================
 
